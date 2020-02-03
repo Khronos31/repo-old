@@ -61,18 +61,18 @@ Name: GNU dbm
 
 Package: com.khronos.gettext
 Architecture: iphoneos-arm
-Version: 0.20-1
+Version: 0.20-2
 Priority: optional
 Section: Development
 Maintainer: Khronos
 Pre-Depends: dpkg
 Depends: com.khronos.libiconv
-Filename: debs/common/com.khronos.gettext_0.20-1_iphoneos-arm.deb
-Size: 6223340
-MD5sum: 239dd8dcb0a46b2e0321d81137daffdd
-SHA1: 7cf3e25dbad6fc3b749d16f4d6a0923bdda1a573
-SHA256: 3da8f0b3ce523a8617d40add07e77d66fee7988c0f567bcc58764c53caa9c380
-SHA512: 65f9d941622bb9eedaecf2792ced667ce66a928a03b436fdbd48fc06d01dc1c8ef0ddf0e62ea941a59ca503b726efc2d6081acf1a11b2bbd6df2cb8efb5e1af5
+Filename: debs/common/com.khronos.gettext_0.20-2_iphoneos-arm.deb
+Size: 5947212
+MD5sum: 80c9ec49fbc74f7dfb1310ef1f1566e1
+SHA1: 24689c69e70aa3a02ebae458c85da5416764dc4f
+SHA256: cb543760c00b700bf382d258c4b6980b64bd89d0e02414a2b81915a79201c681
+SHA512: 67e060b8ab79cc1a672bfe0ecd96d08ceaeec544ce3042397583897639748eeca2110160f3495aeddd06ef445c056ee8cc9fac1fbc84370f0a3b23ce10fc4023
 Homepage: https://www.gnu.org/software/gettext/
 Description: Compiled for ARM64/ARMv7.
 	GNU Internationalization utilties
@@ -100,17 +100,17 @@ Name: libffi
 
 Package: com.khronos.libiconv
 Architecture: iphoneos-arm
-Version: 1.16-1
+Version: 1.16-2
 Priority: optional
 Section: Development
 Maintainer: Khronos
 Pre-Depends: dpkg
-Filename: debs/common/com.khronos.libiconv_1.16-1_iphoneos-arm.deb
-Size: 1406268
-MD5sum: 3de9093330056a20829ea692c33c9c24
-SHA1: 217b6c7bb13d7b633c2503a84f2c2637c4b12eca
-SHA256: 6febb646278e4935d0585fc0f7bbed9e4d20c834eda86d5949f8176d5274729d
-SHA512: ccd30d2fb5ed717c0fafa9894754c97c04791f9d00037e79fb597dbae2c51b9e7978b83c7e1a94fc07c2d9677f0932d4a1741b938a89298a091a121e18ec9da7
+Filename: debs/common/com.khronos.libiconv_1.16-2_iphoneos-arm.deb
+Size: 1446716
+MD5sum: 60adce0c01c6b756a715c1fc3100d3fb
+SHA1: af113e45671851f2502f9e475c5dc10cee5953ab
+SHA256: e2abc8926c4a66a9e4b7ae930d104e245194099231505d3c481daf8a4fa62264
+SHA512: 045612b5de3f55535b9c6d985f98651bfbd7bf794b84f7d28d545cb8e616e6f8c30d2e53294caf61d85aab1e144d95d83ce252f07d6f90b255fc30f20a5462d6
 Homepage: https://www.gnu.org/software/libiconv
 Description: Compiled for ARM64/ARMv7.
 	Charset conversion library
@@ -215,7 +215,7 @@ Name: MeCab-ipadic
 
 Package: com.khronos.ncurses
 Architecture: iphoneos-arm
-Version: 6.1-2
+Version: 6.1-3
 Priority: optional
 Section: System
 Maintainer: Khronos
@@ -223,12 +223,12 @@ Provides: com.mc.ncurses
 Pre-Depends: dpkg
 Conflicts: com.mc.ncurses
 Replaces: com.mc.ncurses
-Filename: debs/common/com.khronos.ncurses_6.1-2_iphoneos-arm.deb
-Size: 1995670
-MD5sum: 984f671267f271d09e1e3a1cda861305
-SHA1: f1f6d5067af39198f67fbf93677655049a7ca2c6
-SHA256: f3a5e1b160bf4a5dd1f6fd268a6728372a00dd644ddceeb6026fd7dc0fa4d82b
-SHA512: 3103df03f1b0e4f87caf6ee061fbdd5fd4d01f73b23a45ff4107fbb2101ff78628f66d78945fa5a9ddcb50e821124428e77fed3db72165f73cb01e3f9d7d6039
+Filename: debs/common/com.khronos.ncurses_6.1-3_iphoneos-arm.deb
+Size: 1995736
+MD5sum: a80b23ffe446b7cd4d426d030cb0d887
+SHA1: 0e1b674402f6770ccf1eddd75431132ff8eb3ac6
+SHA256: f495aca39b77e888bb00a62382818b625b810781df54da850b910b43bb3764fd
+SHA512: 42423a1a18e0f5c56de62df6b86bb732745f73b0f5b93cc6126e2373859a49b73d5d8f5faccce8b076a2aa216cd24bf416018dedef591ba968b4ea2ddbbf7b1f
 Homepage: https://www.gnu.org/software/ncurses/
 Description: Compiled for ARM64/ARMv7.
 	Text-based UI library
@@ -327,19 +327,20 @@ Name: SQLite3
 
 Package: com.khronos.xz
 Architecture: iphoneos-arm
-Version: 5.2.4-1
+Version: 5.2.4-4
 Priority: optional
 Section: Archiving
 Maintainer: Khronos
+Provides: xz
 Pre-Depends: dpkg
 Conflicts: xz
-Replaces: lzma (<< 1:0)
-Filename: debs/common/com.khronos.xz_5.2.4-1_iphoneos-arm.deb
-Size: 1013818
-MD5sum: fe3a73a52ba34ded48c183b65e4b9a1e
-SHA1: 9af1a96b999130ceec23bd072e1c89fc5325a227
-SHA256: d9b8f3429d7dbb9090e2e6ec4b40c605ae3b8a7c0959160920867b1c873b8c3b
-SHA512: 17fc0c3d7b2e357770d16e148c05732550531840995211e799313d04e29f1850c14757520c5aaf58b8168188ec8298eb50966ad0866f93435229a3648b91a533
+Replaces: lzma (<< 1:0), xz
+Filename: debs/common/com.khronos.xz_5.2.4-4_iphoneos-arm.deb
+Size: 432560
+MD5sum: c0fc47b1f1287434979f3b89ad2e1ecb
+SHA1: f118f167b49ec06679135535531cc7579e12a277
+SHA256: 976ec5154c42aecbf16ff2fdf62fc0cb497a49189d8cf615380566c94301dd4a
+SHA512: 2cf7dbe4e9429e84d940c4f4af78bb93c6df7bde912a9cd082d6764e41cb2fe91ba07db15e79bffb7176b6b68f6557adb2c27c8c60e9221980eacd52a0b0a35d
 Homepage: https://tukaani.org/xz/
 Description: Compiled for ARM64/ARMv7.
 	General-purpose data compression with high compression ratio
@@ -385,4 +386,24 @@ Description: Compiled for ARMv7.
 	Open source programming language to build simple/reliable/efficient software.
 Tag: purpose::console
 Name: Go
+
+Package: com.khronos.python3.8
+Architecture: iphoneos-arm
+Version: 3.8.1-1
+Priority: optional
+Section: Scripting
+Maintainer: Khronos
+Pre-Depends: dpkg
+Depends: com.khronos.bzip2, com.khronos.libressl, com.khronos.expat, com.khronos.gdbm, com.khronos.libffi, com.khronos.xz, com.khronos.ncurses, com.khronos.readline, com.khronos.sqlite3, com.khronos.zlib
+Filename: debs/armv7/com.khronos.python3.8_3.8.1-1_armv7.deb
+Size: 18097396
+MD5sum: a988d8b474131bc5dafab6aefbeab078
+SHA1: f2874edd55b95007529c41671d41b2fe50c98ab4
+SHA256: e8108623052a20e9c84b3f541c9b5965ad5059a78d9fc4384c839ab48fe97af2
+SHA512: ba1b993618ebfb58ae5fb8f7f917964d1121441a762eebc32f83702e21f81c6617a18b2b8d1daa034f55b6119f97d302b43cb66ca41f55a636107ea4b34f4a2c
+Homepage: https://www.python.org
+Description: Compiled for ARMv7.
+	Python is a programming language that lets you work quickly and integrate systems more effectively.
+Tag: purpose::console
+Name: Python 3.8
 

@@ -302,6 +302,27 @@ Description: Compiled for ARM64/ARMv7.
 	I /could/ just package the whole SDK (except for headers with the APSL V1.1 license). It's /really/ unclear on the terms of distribution of the iOS SDK (Xcode's agreement says "you can't", but the headers points to maybe because opensource. IANAL). It's unclear if the *.tbd files are safe to redistribute.
 Name: SDK Installer
 
+Package: com.khronos.sdk
+Architecture: iphoneos-arm
+Version: 1.1-1
+Priority: optional
+Section: Addons
+Maintainer: Khronos
+Provides: com.mc.sdk, com.mc.SDK
+Pre-Depends: dpkg, curl | wget, unzip, tar
+Depends: ldid, llvm-clang | org.coolstar.llvm-clang64 | org.coolstar.llvm-clang32, ld64 | org.coolstar.ld64, odcctools (>=895) | org.coolstar.cctools, sed, findutils, make
+Conflicts: com.mc.sdk, com.mc.SDK
+Filename: debs/common/com.khronos.sdk_1.1-1_iphoneos-arm.deb
+Size: 2852
+MD5sum: 2aae570f02adae2b3c97b6ba69ccac64
+SHA1: f5dfc29547b1470e0fddd4e7e0a2e18bbca9cf90
+SHA256: 27ef9b1980e1a4db2574d3185199f4c1c432be51f4f143e557395e43f8350494
+SHA512: f1f6fa29b112b98a060979fa277ae9a8229c4bf06c1e40c8151771cb32ab033308d509b1f323aee058be70fcf1f4dd17b5c4748eab06bc52c0ae767d16a23119
+Description: Compiled for ARM64/ARMv7.
+	Downloads the iPhoneOS SDK and installs the tools for compiling on device.
+	This packages also downloads dependencies needed for adding support for pythons' pip, nim's nim, golang's go & ruby's gems.
+Name: SDK Installer
+
 Package: com.khronos.sqlite3
 Architecture: iphoneos-arm
 Version: 3.31.1-1
@@ -405,18 +426,18 @@ Name: MeCab
 
 Package: com.khronos.python3.8
 Architecture: iphoneos-arm
-Version: 3.8.1-1
+Version: 3.8.1-2
 Priority: optional
 Section: Scripting
 Maintainer: Khronos
 Pre-Depends: dpkg
 Depends: com.khronos.bzip2, com.khronos.libressl, com.khronos.expat, com.khronos.gdbm, com.khronos.libffi, com.khronos.xz, com.khronos.ncurses, com.khronos.readline, com.khronos.sqlite3, com.khronos.zlib
-Filename: debs/arm64/com.khronos.python3.8_3.8.1-1_arm64.deb
-Size: 18387412
-MD5sum: 8182ae6a5c28e017e5f25a6aa77f5368
-SHA1: f58c664a1395b997beb40e39712a9277088f473e
-SHA256: 8bab6cf0186a85d219539ce341dc36c9e0df4f19a25c484289c220a0be8ef13f
-SHA512: a50190fed790763b20e7d06d7bf1530a38e01f9fb8ae792bb18d9ddcbd3ed0e7d1f12f10376232bc5840f066fb8dc5ecbff834a7d9aaf820535d44353bc5ad83
+Filename: debs/arm64/com.khronos.python3.8_3.8.1-2_arm64.deb
+Size: 18271082
+MD5sum: 147607de3e4bf408885251dfc1474366
+SHA1: 8b16f76df64239cb41dcc44a424ff3f1fa77e126
+SHA256: 31d2a26ca131c0a254edb13e82dea9f3119b6ed14dfbb46fcea9449e2857a581
+SHA512: d32207c6f3a027ff2b860301e2002fdb42c3581796a6878a0ba0153b3f5a59e68ac195a094b530100a1f3f9103869b233aedab00f7af55fbc51f59f5052fc1a6
 Homepage: https://www.python.org
 Description: Compiled for ARM64.
 	Python is a programming language that lets you work quickly and integrate systems more effectively.

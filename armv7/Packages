@@ -237,18 +237,18 @@ Name: New Curses
 
 Package: com.khronos.nim
 Architecture: iphoneos-arm
-Version: 1.0.4-1
+Version: 1.2.0-2
 Priority: optional
 Section: Scripting
 Maintainer: Khronos
 Pre-Depends: dpkg
 Depends: com.khronos.sdk
-Filename: debs/common/com.khronos.nim_1.0.4-1_iphoneos-arm.deb
-Size: 10230150
-MD5sum: ea91b3b3c84054c28ad2203da5f45ae8
-SHA1: 312a8e9354eae80eddb3c24fb86c6a0150c81c5f
-SHA256: fdffa1349b6c7adf0a3fb511030e3ff5305ef47af207328eeef74778aaa3e908
-SHA512: 5233598abae7bba735cef19d175f115287dc78569ab8773db2c9aa22c7c94fc1ddb50262f8b222e3c9f4df21df4621fb65a09a2ea4b9388bb542ef739ff5f807
+Filename: debs/common/com.khronos.nim_1.2.0-2_iphoneos-arm.deb
+Size: 9065544
+MD5sum: 95fb738930fb63ec315ee9bedac5491d
+SHA1: 7de502310687c206bb1ed93247f534ff4f61471f
+SHA256: d5d5429a90b3ef9e022559f68c559a40df01c71aebd1ce44f051e362877099cb
+SHA512: 55fc3ab93db98839d5a64fccfc19f97f7a69d5ee19580ff51c7e4bcd96343343db16679ceae04be5b24f737ac8050d36e3208b795d7ed14df3d0d15082ee163b
 Homepage: https://nim-lang.org
 Description: Compiled for ARM64/ARMv7.
 	Nim is a statically typed compiled systems programming language. It combines successful concepts from mature languages like Python, Ada and Modula.
@@ -280,31 +280,7 @@ Name: readline
 
 Package: com.khronos.sdk
 Architecture: iphoneos-arm
-Version: 1.0-3
-Priority: optional
-Section: Addons
-Maintainer: Khronos
-Provides: com.mc.sdk, com.mc.SDK
-Pre-Depends: dpkg, wget, unzip
-Depends: ldid, clang | llvm-clang | org.coolstar.llvm-clang64 | org.coolstar.llvm-clang32, ld64 | org.coolstar.ld64, odcctools (>=895) | org.coolstar.cctools, sed, findutils, make
-Conflicts: com.mc.sdk, com.mc.SDK
-Filename: debs/common/com.khronos.sdk_1.0-3_iphoneos-arm.deb
-Size: 687426
-MD5sum: fb7a7a339dd335b0ce204f8e3f5185b0
-SHA1: 772cc796494d7460f7f026e4542c185dd8160487
-SHA256: 3ba4bcafd39bf1631f1041673dd742118f689b23e8f34a65ed18825707912dac
-SHA512: 30b849e9854102dc2a6ee4dc607b4e4122a845e25f45c0e2f007a1aa0c5483ddfbce47b44b8db12c14c0d98d7eb9e2ee254f8c3f8be7ae0dff6cc9f4e3d699d7
-Description: Compiled for ARM64/ARMv7.
-	Downloads the iPhoneOS SDK and installs the tools for compiling on device.
-	This packages also downloads dependencies needed for adding support for pythons' pip, golang's go & ruby's gems.
-	|
-	This package does not illegally redistribute the iPhoneOS SDK, only the LLVM C++ headers which are under the Illinois Open Source License & MIT license and headers under the APSL version 2.0 license. (TLDR, please don't sue.) See /usr/SDK/README for more information about these licenses.
-	I /could/ just package the whole SDK (except for headers with the APSL V1.1 license). It's /really/ unclear on the terms of distribution of the iOS SDK (Xcode's agreement says "you can't", but the headers points to maybe because opensource. IANAL). It's unclear if the *.tbd files are safe to redistribute.
-Name: SDK Installer
-
-Package: com.khronos.sdk
-Architecture: iphoneos-arm
-Version: 1.1-1
+Version: 1.2-1
 Priority: optional
 Section: Addons
 Maintainer: Khronos
@@ -312,12 +288,12 @@ Provides: com.mc.sdk, com.mc.SDK
 Pre-Depends: dpkg, curl | wget, unzip, tar
 Depends: ldid, llvm-clang | org.coolstar.llvm-clang64 | org.coolstar.llvm-clang32, ld64 | org.coolstar.ld64, odcctools (>=895) | org.coolstar.cctools, sed, findutils, make
 Conflicts: com.mc.sdk, com.mc.SDK
-Filename: debs/common/com.khronos.sdk_1.1-1_iphoneos-arm.deb
-Size: 2852
-MD5sum: 2aae570f02adae2b3c97b6ba69ccac64
-SHA1: f5dfc29547b1470e0fddd4e7e0a2e18bbca9cf90
-SHA256: 27ef9b1980e1a4db2574d3185199f4c1c432be51f4f143e557395e43f8350494
-SHA512: f1f6fa29b112b98a060979fa277ae9a8229c4bf06c1e40c8151771cb32ab033308d509b1f323aee058be70fcf1f4dd17b5c4748eab06bc52c0ae767d16a23119
+Filename: debs/common/com.khronos.sdk_1.2-1_iphoneos-arm.deb
+Size: 5028
+MD5sum: 74141fa14f16e9511ad15114b8f44eeb
+SHA1: 130e7b77db70756345297f5313a327224f6265ca
+SHA256: a9ca9720b4c02312a6037d37b3f97272d67238d706156f1ede70f7a80e2c8724
+SHA512: eb28c9b3c8dcf534c6ba6a74298435582d0134a8ff77b3d415d9ea0dc2a2b65f2bc49a368e43a94259a7ca8e90fe131c7fa56f724572807098789a8603ab583e
 Description: Compiled for ARM64/ARMv7.
 	Downloads the iPhoneOS SDK and installs the tools for compiling on device.
 	This packages also downloads dependencies needed for adding support for pythons' pip, nim's nim, golang's go & ruby's gems.
